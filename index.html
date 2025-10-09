@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+<html lang=pt-PT>
+<head>
+<title>Radio Amigos Unidos</title>
+<meta name="description" content="RAU" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv=X-UA-Compatible content="IE=Edge"/>
+<meta property="og:title" content="RAU Player" />
+<meta property="og:description" content="RAU" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/nNh98kV.png" sizes="48x48" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/nNh98kV.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/nNh98kV.png" sizes="144x144" />
+<link rel="icon" type="image/png" href="https://i.imgur.com/nNh98kV.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://i.imgur.com/nNh98kV.png" sizes="180x180"/>
+<link rel="stylesheet" href="./style.css">
+</div>
+<body>
+<!-- partial:index.partial.html -->
+<div class="cloud">
+    <img src="https://xatimg.com/image/6ngTg5IHY971.png" alt="" class="cloud1">
+    <img src="https://xatimg.com/image/9AsjDX1cBjTj.png" alt="" class="cloud2">
+    <img src="https://xatimg.com/image/L5gj88qJ9yYI.png" alt="" class="cloud3">
+    <img src="https://xatimg.com/image/8QUvEGE6TllU.png" alt="" class="cloud4">
+</div>
+<script>
+
+    var message = "©arlos Copyright";
+
+    function clickIE4() {
+        if (event.button == 2) {
+            alert(message);
+            return false;
+        }
+    }
+
+    function clickNS4(e) {
+        if (document.layers || document.getElementById && !document.all) {
+            if (e.which == 2 || e.which == 3) {
+                alert(message);
+                return false;
+            }
+        }
+    }
+
+    if (document.layers) {
+        document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown = clickNS4;
+    } else if (document.all && !document.getElementById) {
+        document.onmousedown = clickIE4;
+    }
+
+    document.oncontextmenu = new Function("alert(message);return false")
+</script>
+<script>
+
+    function disableselect(e) {
+        return false
+    }
+    function reEnable() {
+        return true
+    }
+    document.onselectstart = new Function("return false")
+    if (window.sidebar) {
+        document.onmousedown = disableselect
+        document.onclick = reEnable
+    }
+</script>
+<script>
+        window.oncontextmenu = function () {
+            console.log("Right Click Disabled");
+            return false;
+        }
+    </script> 
+  
+</body>
+</html>
