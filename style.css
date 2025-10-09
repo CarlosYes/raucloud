@@ -98,8 +98,8 @@
 }
 
 .photobanner {
-  -webkit-animation: bannermove 150s linear infinite;
-	animation: bannermove 150s linear infinite;
+  -webkit-animation: bannermove 160s linear infinite;
+	animation: bannermove 160s linear infinite;
 }
 
 @keyframes bannermove {
