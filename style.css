@@ -10,7 +10,7 @@
   left: 0;
 }
 .cloudcontent {
-    position: relative;
+    position: fixed;
     padding:30px;
     color: #337AB7;
     font-size:22px;
@@ -21,7 +21,7 @@
     width: 100%;
     left: 0;
     top: -200px;
-    position: absolute;
+    position: fixed;
     -webkit-user-select: none; 
     -moz-user-select: none;   
     -ms-user-select: none;
@@ -86,8 +86,8 @@
 }
 .photobanner {
 	position: fixed;
-	width: 350px;
-	height: 303px;
+	width: 280px;
+	height: 233px;
 	bottom: 2px;
 	display: flex;
 }
